@@ -29,7 +29,9 @@ oddEvenBtn.addEventListener('click', function(){
     // Sommo i due numeri e li salvo in una variabile
     const resultNumber = num1 + num2;
 
+    // La traccia richiedeva di sommare i due numeri e usando la funzione precedentemente creata di stabilire se il numero fosse paro o disparo e successivamente di dichiarare il vincitore, personalmente ho preferito saltare questo passaggio e sfruttare la funzione direttamente nella dichiarazione del vincitore
 
+    
     // Preparo un testo di base da printare nel paragraph all'interno del DOM 
     let result = `L'utente ha scelto ${userChoiceValue} con il numero ${num1}, al pc è uscito il numero ${num2} che sommati fanno ${resultNumber}.  `
 
