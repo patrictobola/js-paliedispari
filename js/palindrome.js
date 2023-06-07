@@ -9,18 +9,17 @@ const palindromeParagraph = document.querySelector('#palindrome p');
 function isPalindrome(word){
     for (let i = 0; i < word.length / 2; i++){
         if (word[i] !== word[word.length - 1 - i]){
-            return 'Ops, non è palindroma';
+            return false;
         }
     }
 
-    return 'Daje è palindroma';
-    
+    return true;
 }
 
 // Creo un event listener che raccoglie il value dell'input dove l'utente inserisce la parola 
 palindromeBtn.addEventListener('click', function(){
     const word = palindromeInput.value;
-    const result = isPalindrome(word);
+    const result = isPalindrome(word) ? 'La parola è palindroma' : 'La parola non è palindroma';
     console.log(result)
     palindromeParagraph.innerHTML = result
 })
