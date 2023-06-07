@@ -12,9 +12,8 @@ function randomNum(){
 
 // Creo una funziona che stabilisca se un numero è paro 
 function isEven(a){
-    result = false;
-    if (a % 2 === 0) result = true;
-    return result;
+    if (a % 2 === 0) return true;
+    return false;
 }
 
 // Aggiungo un event listener al button per raccogliere i dati dell'utente e dare un risultato 
