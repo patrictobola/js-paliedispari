@@ -18,7 +18,7 @@ function isPalindrome(word){
 
 // Creo un event listener che raccoglie il value dell'input dove l'utente inserisce la parola 
 palindromeBtn.addEventListener('click', function(){
-    const word = palindromeInput.value;
+    const word = palindromeInput.value.toLowerCase();
     const result = isPalindrome(word) ? 'La parola è palindroma' : 'La parola non è palindroma';
     console.log(result)
     palindromeParagraph.innerHTML = result
